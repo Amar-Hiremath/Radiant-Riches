@@ -1,0 +1,31 @@
+.navbar {
+  width: 100vw;
+  height: 64px;
+  background-color: #212731;
+  color: #D1D6DA;
+  display: flex;
+  flex-direction: row;
+  gap: 79px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-input-container input {
+  height: 37px;
+  width: 258px;
+  border: 1px solid #E1E4E6;
+  outline: none;
+  border-radius: 8px;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 53px;
+}
+
+#search {
+  position: absolute;
+  padding: 5px 0px 0px 9px;
+  fill: #626e79;
+}/*# sourceMappingURL=Navbar.css.map */

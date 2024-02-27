@@ -1,0 +1,32 @@
+@import "../variables/variables.scss";
+
+.navbar {
+  width: 100vw;
+  height: 64px;
+  background-color: $header-color;
+  color: $header-text-color;
+  display: flex;
+  flex-direction: row;
+  gap: 79px;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-input-container input {
+  height: 37px;
+  width: 258px;
+  border: 1px solid $input-border-color;
+  outline: none;
+  border-radius: 8px;
+
+}
+.navbar-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 53px;
+}
+
+#search {
+  position: absolute;
+  padding: 5px 0px 0px 9px;
+  fill:$light-icon-color
+}

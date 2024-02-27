@@ -1,0 +1,95 @@
+@import "../variables/variables.scss";
+
+.page {
+  margin: 1rem;
+  h1 {
+    color: $h1-color;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  hr {
+    border: 1px solid $hr-color;
+    margin: 0;
+  }
+
+  .flex-box {
+    p {
+      color: $icon-text-color;
+    }
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .flex-box-1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+
+      .flex-p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+          padding-left: 8px;
+          margin: 0; /* Move margin declaration to the child p */
+        }
+      }
+
+      p {
+        margin: 0; /* Move margin declaration to the child p */
+      }
+    }
+
+    .flex-p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .react-icons {
+        padding-left: 4px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .react-icons {
+    vertical-align: middle;
+    fill: $light-icon-color;
+  }
+
+  .links {
+    display: flex;
+    justify-content: start;
+    gap: 80px;
+    margin: 23px 16px 23px 16px;
+    .link {
+      a {
+        color: $heading-dark;
+      }
+      margin-right: 20px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    margin-left: 5px;
+    
+    .nav-link {
+        display: flex;
+      flex-direction: row;
+      align-items: center;
+        a {color: $heading-light;}
+        .react-icon{
+            fill: $dark-icon-color;
+            align-items: center;
+            padding: 0px 10px 0px 10px;
+        }
+    }
+  }
+}
