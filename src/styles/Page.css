@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 .page {
-  margin: 1rem;
+  width: 95%;
+  margin: auto;
+  position: relative;
 }
 .page h1 {
-  color: #2C384A;
+  margin: 38px 0px 12px 0px;
+  color: #2c384a;
   font-size: 60px;
   font-weight: 400;
 }
 .page hr {
-  border: 1px solid #E1E4E6;
+  border: 1px solid #e1e4e6;
   margin: 0;
 }
 .page .flex-box {
@@ -17,7 +20,8 @@
   justify-content: space-between;
 }
 .page .flex-box p {
-  color: #4B5665;
+  margin: 14px 0px 10px 0px;
+  color: #4b5665;
 }
 .page .flex-box .flex-box-1 {
   display: flex;
@@ -51,16 +55,17 @@
   fill: #626e79;
 }
 .page .links {
+  width: 100%;
   display: flex;
   justify-content: start;
   gap: 80px;
-  margin: 23px 16px 23px 16px;
+  margin: 24px 16px 24px 16px;
 }
 .page .links .link {
   margin-right: 20px;
 }
 .page .links .link a {
-  color: #4B5665;
+  color: #4b5665;
 }
 .page .nav {
   display: flex;
@@ -74,10 +79,174 @@
   align-items: center;
 }
 .page .nav .nav-link a {
-  color: #727D87;
+  color: #727d87;
 }
 .page .nav .nav-link .react-icon {
-  fill: #5C6874;
+  fill: #5c6874;
   align-items: center;
   padding: 0px 10px 0px 10px;
+}
+.page .cards img {
+  width: 141px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.page .cards .card {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 255px;
+  margin: 40px 0px 40px 0px;
+  background-color: #ffffff;
+}
+.page .cards .card .left-div {
+  display: flex;
+  height: 100%;
+  width: 225px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page .cards .card .left-div .card-tag {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  top: -17px;
+  left: 0;
+  height: 34px;
+  width: 136px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  background-color: #ff7724;
+  color: #ffffff;
+}
+.page .cards .card .left-div .srNo {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #626e79;
+  border: 1px solid #e1e4e6;
+  top: 32px;
+  left: -22px;
+}
+.page .cards .card .left-div .image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page .cards .card .left-div .image-section p {
+  color: #626e79;
+  font-size: 13px;
+}
+.page .cards .card .middle-div {
+  display: flex;
+  flex-direction: column;
+  color: #4b5665;
+  font-size: 16px;
+  line-height: 24px;
+  width: 483px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.page .cards .card .middle-div .upper-section .productName {
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.page .cards .card .middle-div .upper-section .productName span {
+  font-weight: 700;
+}
+.page .cards .card .middle-div .lower-section {
+  margin-top: 4px;
+}
+.page .cards .card .middle-div .lower-section .highlight-heading {
+  margin: 0;
+  color: #2c384a;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.page .cards .card .middle-div .lower-section p {
+  margin: 10px 0px 22px 18px;
+}
+.page .cards .card .middle-div a {
+  display: flex;
+  color: #1b88f4;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 4px;
+}
+.page .cards .card .right-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-sizing: border-box;
+  align-items: center;
+}
+.page .cards .card .right-div .rating {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 135px;
+  height: 118px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #f3f9ff;
+  align-items: center;
+}
+.page .cards .card .right-div .rating .info-icon {
+  position: absolute;
+  top: 3px;
+  right: 32px;
+}
+.page .cards .card .right-div .rating .number {
+  margin-top: 6px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: #074786;
+}
+.page .cards .card .right-div .rating .stars {
+  margin-bottom: 18px;
+}
+.page .cards .card .right-div .rating-quality {
+  color: #074786;
+  margin: 6px 0px 8px 0px;
+}
+.page .cards .card button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b88f4;
+  border: none;
+  z-index: 1;
+  color: #ffffff;
+  width: 232px;
+  height: 48px;
+  border-radius: 12px;
+  margin-bottom: 17px;
 }/*# sourceMappingURL=Page.css.map */

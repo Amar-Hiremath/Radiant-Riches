@@ -1,8 +1,12 @@
 @import "../variables/variables.scss";
 
 .page {
-  margin: 1rem;
+  width: 95%;
+  margin: auto;
+  position: relative;
+
   h1 {
+    margin: 38px 0px 12px 0px;
     color: $h1-color;
     font-size: 60px;
     font-weight: 400;
@@ -14,9 +18,9 @@
 
   .flex-box {
     p {
+      margin: 14px 0px 10px 0px;
       color: $icon-text-color;
     }
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,10 +65,11 @@
   }
 
   .links {
+    width: 100%;
     display: flex;
     justify-content: start;
     gap: 80px;
-    margin: 23px 16px 23px 16px;
+    margin: 24px 16px 24px 16px;
     .link {
       a {
         color: $heading-dark;
@@ -77,19 +82,198 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    
     margin-left: 5px;
-    
+
     .nav-link {
-        display: flex;
+      display: flex;
       flex-direction: row;
       align-items: center;
-        a {color: $heading-light;}
-        .react-icon{
-            fill: $dark-icon-color;
-            align-items: center;
-            padding: 0px 10px 0px 10px;
+      a {
+        color: $heading-light;
+      }
+      .react-icon {
+        fill: $dark-icon-color;
+        align-items: center;
+        padding: 0px 10px 0px 10px;
+      }
+    }
+  }
+  .cards {
+    img {
+      width: 141px;
+      object-fit: contain;
+    }
+    .card {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
+      height: 255px;
+      margin: 40px 0px 40px 0px;
+      background-color: $card-color;      
+
+      .left-div {
+        display: flex;
+        height: 100%;
+        width: 225px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .card-tag {
+          position: absolute;
+          display: flex;
+          z-index: 1;
+          top: -17px;
+          left: 0;
+          height: 34px;
+          width: 136px;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          justify-content: center;
+          background-color: $tag-color;
+          color: $primary-text-color;
         }
+
+        .srNo {
+          position: absolute;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $secondary-color;
+          border: 1px solid $border-color;
+          top: 32px;
+          left: -22px;
+        }
+
+        .image-section {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          p {
+            color: $secondary-color;
+            font-size: 13px;
+          }
+        }
+      }
+
+      .middle-div {
+        display: flex;
+        flex-direction: column;
+        color: $dark-color;
+        font-size: 16px;
+        line-height: 24px;
+        width: 483px;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .upper-section {
+          .productName {
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+        .lower-section {
+          margin-top: 4px;
+
+          .highlight-heading {
+            margin: 0;
+            color: $darker-color;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          p {
+            margin: 10px 0px 22px 18px;
+          }
+        }
+        a {
+          display: flex;
+          color: $blue-color;
+          align-items: center;
+          justify-content: start;
+          cursor: pointer;
+          width: fit-content;
+          gap: 4px;
+        }
+      }
+      .right-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;        
+        width: fit-content;
+        box-sizing: border-box;
+        align-items: center;
+
+        .rating {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 135px;
+          height: 118px;
+          border-bottom-right-radius: 12px;
+          border-bottom-left-radius: 12px;
+          background-color: $light-blue;
+          align-items: center;
+        
+
+        .info-icon {
+          position: absolute;
+          top: 3px;
+          right: 32px;
+        }
+
+        .number {
+          margin-top: 6px;
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 48px;
+          letter-spacing: 0em;
+          color: $dark-blue
+        }
+        .stars {
+          margin-bottom: 18px;
+        }
+      }
+      .rating-quality{
+        color: $dark-blue;
+        margin: 6px 0px 8px 0px;
+      }
+    }
+
+      button {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $blue-color;
+        border: none;
+        z-index: 1;
+        color: $primary-text-color;
+        width: 232px;
+        height: 48px;
+        border-radius: 12px;
+        margin-bottom: 17px;
+      }
     }
   }
 }

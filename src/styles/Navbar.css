@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 .navbar {
-  width: 100vw;
+  width: 100%;
   height: 64px;
   background-color: #212731;
-  color: #D1D6DA;
+  color: #d1d6da;
   display: flex;
   flex-direction: row;
   gap: 79px;
@@ -13,7 +14,7 @@
 .navbar-input-container input {
   height: 37px;
   width: 258px;
-  border: 1px solid #E1E4E6;
+  border: 1px solid #e1e4e6;
   outline: none;
   border-radius: 8px;
 }
