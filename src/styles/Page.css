@@ -96,13 +96,13 @@
   justify-content: space-between;
   position: relative;
   width: 100%;
-  height: 255px;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 40px 0px 40px 0px;
   background-color: #ffffff;
 }
 .page .cards .card .left-div {
   display: flex;
-  height: 100%;
   width: 225px;
   flex-direction: column;
   align-items: center;
@@ -142,6 +142,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: auto;
   align-items: center;
 }
 .page .cards .card .left-div .image-section p {
@@ -155,6 +156,8 @@
   font-size: 16px;
   line-height: 24px;
   width: 483px;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -166,8 +169,24 @@
 .page .cards .card .middle-div .upper-section .productName span {
   font-weight: 700;
 }
+.page .cards .card .middle-div .upper-section .offer {
+  width: 61px;
+  height: 26px;
+  background-color: #F2F4F7;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin: 9px 0px 4px 4px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #074786;
+}
 .page .cards .card .middle-div .lower-section {
-  margin-top: 4px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .page .cards .card .middle-div .lower-section .highlight-heading {
   margin: 0;
@@ -177,10 +196,61 @@
   letter-spacing: 0em;
   text-align: left;
 }
+.page .cards .card .middle-div .lower-section .feedback {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 12px;
+  background-color: #FFF4ED;
+  padding: 8px 12px 8px 12px;
+  margin-left: 22px;
+}
+.page .cards .card .middle-div .lower-section .feedback .info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #4b5665;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.page .cards .card .middle-div .lower-section .feedback .info:last-child {
+  margin-bottom: 0;
+}
+.page .cards .card .middle-div .lower-section .feedback .info .rating {
+  background-color: #fbfcfd;
+  width: 40px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  color: #1b88f4;
+  border-radius: 4px;
+}
+.page .cards .card .middle-div .lower-section .question {
+  margin: 15px 0px 8px 0px;
+  color: #2c384a;
+}
+.page .cards .card .middle-div .lower-section .answers {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
 .page .cards .card .middle-div .lower-section p {
   margin: 10px 0px 22px 18px;
 }
+.page .cards .card .middle-div .lower-section img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
 .page .cards .card .middle-div a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
   display: flex;
   color: #1b88f4;
   align-items: center;
@@ -189,15 +259,14 @@
   width: -moz-fit-content;
   width: fit-content;
   gap: 4px;
+  margin-bottom: 6 px;
 }
 .page .cards .card .right-div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   width: -moz-fit-content;
   width: fit-content;
-  box-sizing: border-box;
   align-items: center;
 }
 .page .cards .card .right-div .rating {
@@ -232,7 +301,7 @@
   color: #074786;
   margin: 6px 0px 8px 0px;
 }
-.page .cards .card button {
+.page .cards .card .right-div button {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -249,4 +318,135 @@
   height: 48px;
   border-radius: 12px;
   margin-bottom: 17px;
+}
+.page .cards .card:last-child {
+  margin-bottom: 0;
+}
+.page .secondary-heading {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2c384a;
+  margin: 80px 0px 35px 0px;
+}
+.page .biscuits-cards {
+  width: 100%;
+  display: flex;
+  margin: 0px;
+}
+.page .biscuits-cards .biscuit {
+  width: 333px;
+  height: 425px;
+  border-radius: 12px;
+  margin-right: 22px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.page .biscuits-cards .biscuit .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+.page .biscuits-cards .biscuit img {
+  width: 141px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-items: center;
+}
+.page .biscuits-cards .biscuit .offers {
+  display: flex;
+  gap: 4px;
+  color: #074786;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  align-items: center;
+}
+.page .biscuits-cards .biscuit .offers .offerPercentage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #F2F4F7;
+  text-align: center;
+  padding: 4px 8px 4px 8px;
+}
+.page .biscuits-cards .biscuit .offers .limitedTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #F2F4F7;
+  text-align: center;
+  padding: 4px 8px 4px 8px;
+}
+.page .biscuits-cards .biscuit .productName {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #626e79;
+  margin: 5px 0px 7px 0px;
+}
+.page .biscuits-cards .biscuit .productDiscription {
+  font-size: 16px;
+  width: 284px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #626e79;
+  margin-bottom: 6px;
+}
+.page .biscuits-cards .biscuit .pricing {
+  display: flex;
+  direction: flex-start;
+  letter-spacing: 0em;
+  text-align: left;
+  align-items: baseline;
+}
+.page .biscuits-cards .biscuit .pricing .offer-price {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #5C6874;
+}
+.page .biscuits-cards .biscuit .pricing .price {
+  justify-content: center;
+  vertical-align: bottom;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #9FA9B3;
+  margin-left: 10px;
+}
+.page .biscuits-cards .biscuit .pricing .offer-percentage {
+  justify-content: center;
+  vertical-align: bottom;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #EF4C5D;
+  margin-left: 12px;
+}
+.page .biscuits-cards .biscuit .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+.page .biscuits-cards .biscuit .button button {
+  width: 292px;
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  background-color: #1b88f4;
+  color: #ffffff;
+  margin: 0px;
 }/*# sourceMappingURL=Page.css.map */

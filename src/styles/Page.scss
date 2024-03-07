@@ -108,13 +108,12 @@
       justify-content: space-between;
       position: relative;
       width: 100%;
-      height: 255px;
+      height: fit-content;
       margin: 40px 0px 40px 0px;
-      background-color: $card-color;      
+      background-color: $card-color;
 
       .left-div {
         display: flex;
-        height: 100%;
         width: 225px;
         flex-direction: column;
         align-items: center;
@@ -156,6 +155,7 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
+          height: auto;
           align-items: center;
           p {
             color: $secondary-color;
@@ -171,6 +171,7 @@
         font-size: 16px;
         line-height: 24px;
         width: 483px;
+        height: fit-content;
         margin-top: auto;
         margin-bottom: auto;
 
@@ -184,10 +185,25 @@
               font-weight: 700;
             }
           }
+
+          .offer {
+            width: 61px;
+            height: 26px;
+            background-color: $offer-bgColor;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            margin: 9px 0px 4px 4px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $dark-blue;
+          }
         }
         .lower-section {
-          margin-top: 4px;
-
+          height: fit-content;
           .highlight-heading {
             margin: 0;
             color: $darker-color;
@@ -196,11 +212,66 @@
             letter-spacing: 0em;
             text-align: left;
           }
+
+          .feedback {
+            width: 100%;
+            height: fit-content;
+            border-radius: 12px;
+            background-color: $feedback-color;
+            padding: 8px 12px 8px 12px; // Add padding for spacing from the sides
+            margin-left: 22px;
+
+            .info {
+              display: flex;
+              gap: 8px; // Add horizontal spacing between info divs
+              align-items: center; // Align items vertically in case of different heights
+              margin-bottom: 8px; // Add margin bottom for spacing between info divs
+              color: $dark-color;
+              font-size: 15px;
+              line-height: 24px;
+              letter-spacing: 0em;
+              text-align: left;
+
+              &:last-child {
+                margin-bottom: 0; // Remove margin bottom for the last info div
+              }
+              .rating {
+                background-color: $background-color;
+                width: 40px;
+                height: 28px;
+                display: flex;
+                justify-content: center;
+                color: $blue-color;
+                border-radius: 4px;
+              }
+            }
+          }
+          .question {
+            margin: 15px 0px 8px 0px;
+            color: $darker-color;
+          }
+          .answers {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+          }
+
           p {
             margin: 10px 0px 22px 18px;
           }
+
+          img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+          }
         }
         a {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
           display: flex;
           color: $blue-color;
           align-items: center;
@@ -208,15 +279,14 @@
           cursor: pointer;
           width: fit-content;
           gap: 4px;
+          margin-bottom: 6 px;
         }
       }
       .right-div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%;        
         width: fit-content;
-        box-sizing: border-box;
         align-items: center;
 
         .rating {
@@ -230,49 +300,187 @@
           border-bottom-left-radius: 12px;
           background-color: $light-blue;
           align-items: center;
-        
 
-        .info-icon {
-          position: absolute;
-          top: 3px;
-          right: 32px;
+          .info-icon {
+            position: absolute;
+            top: 3px;
+            right: 32px;
+          }
+
+          .number {
+            margin-top: 6px;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 48px;
+            letter-spacing: 0em;
+            color: $dark-blue;
+          }
+          .stars {
+            margin-bottom: 18px;
+          }
         }
-
-        .number {
-          margin-top: 6px;
-          font-size: 32px;
+        .rating-quality {
+          color: $dark-blue;
+          margin: 6px 0px 8px 0px;
+        }
+        button {
+          font-size: 16px;
           font-weight: 400;
-          line-height: 48px;
+          line-height: 24px;
           letter-spacing: 0em;
-          color: $dark-blue
-        }
-        .stars {
-          margin-bottom: 18px;
+          text-align: center;
+          display: flex;
+
+          justify-content: center;
+          align-items: center;
+          background-color: $blue-color;
+          border: none;
+          z-index: 1;
+          color: $primary-text-color;
+          width: 232px;
+          height: 48px;
+          border-radius: 12px;
+          margin-bottom: 17px;
         }
       }
-      .rating-quality{
-        color: $dark-blue;
-        margin: 6px 0px 8px 0px;
+      &:last-child {
+        margin-bottom: 0;
       }
     }
+  }
 
-      button {
+  .secondary-heading {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $darker-color;
+    margin: 80px 0px 35px 0px;
+  }
+  .biscuits-cards {    
+    width: 100%;
+    display: flex;
+    margin: 0px ;
+
+
+    .biscuit {      
+      width: 333px;
+      height: 425px;
+      border-radius: 12px;      
+      margin-right: 22px;
+      padding: 20px;
+      background-color: $card-color;
+
+      .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+       ;
+      }
+      img {
+        width: 141px;
+        object-fit: contain;
+        align-items: center;
+      }
+      .offers {
+        display: flex;
+        gap: 4px;
+        color: $dark-blue;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        align-items: center;
+
+        .offerPercentage {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          background-color: $offer-bgColor;
+          text-align: center;
+          padding: 4px 8px 4px 8px;
+        }
+        .limitedTime {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          background-color: $offer-bgColor;
+          text-align: center;
+          padding: 4px 8px 4px 8px;
+        }
+      }
+
+      .productName {
+        display: flex;
+        justify-content: center;
         font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $secondary-color;
+        margin: 5px 0px 7px 0px;
+      }
+      .productDiscription {
+        font-size: 16px;
+        width: 284px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0em;
-        text-align: center;
+        text-align: left;
+        color: $secondary-color;
+        margin-bottom: 6px;
+      }
+      .pricing {
+        display: flex;
+        direction: flex-start;
+        letter-spacing: 0em;
+        text-align: left;
+        align-items: baseline;
+
+        .offer-price {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          color: $dark-text;
+        }
+        .price {
+          justify-content: center;
+          vertical-align: bottom;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          color: $light-text;
+          margin-left: 10px;
+        }
+        .offer-percentage {
+          justify-content: center;
+          vertical-align: bottom;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 20px;
+          color: $red-text;
+          margin-left: 12px;
+        }
+      }
+      .button {
         display: flex;
         justify-content: center;
-        align-items: center;
-        background-color: $blue-color;
-        border: none;
-        z-index: 1;
-        color: $primary-text-color;
-        width: 232px;
-        height: 48px;
-        border-radius: 12px;
-        margin-bottom: 17px;
+        margin-top: 12px;
+
+        button {
+          width: 292px;
+          height: 48px;
+          border-radius: 12px;
+          border:none ;
+          background-color: $blue-color;
+          color: $primary-text-color;
+          margin: 0px;
+        }
       }
     }
   }
